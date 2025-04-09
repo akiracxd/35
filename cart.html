@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина | Автосервис 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Автосервис 2025</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Ваша корзина</h1>
+        
+        <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Цена</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-table">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Итого:</td>
+                        <td id="cart-total">0 руб.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+        <div class="cart-actions">
+            <button id="clear-cart">Очистить корзину</button>
+            <button id="checkout">Оформить заказ</button>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Автосервис Челябинск. Все права защищены.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
